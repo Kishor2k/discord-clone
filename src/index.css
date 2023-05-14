@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-source-sans-pro font-regular text-dark-gray;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-bold;
+}
+.fluid-text {
+  font-size: clamp(2rem, 2rem + 2vw, 4rem);
+}
+p {
+  @apply text-lg md:text-xl;
+}
+.btn-dark {
+  @apply bg-dark-gray text-white px-8 py-4 rounded-full max-w-max text-xl hover:bg-dark-gray-hover hover:shadow-d-shadow transition-all;
+}
+.btn-light {
+  @apply bg-white text-dark-gray px-8 py-4 rounded-full max-w-max text-xl hover:text-discord-blue hover:shadow-d-shadow transition-all;
+}
+.btn-blue {
+  @apply bg-discord-blue text-white px-8 py-4 rounded-full max-w-max text-xl hover:bg-discord-blue-hover hover:shadow-d-shadow transition-all;
+}
+.btn-sm {
+  @apply px-4 py-2 rounded-full max-w-max  hover:shadow-d-shadow transition-all;
+}
+.wrapper {
+  @apply max-w-7xl mx-auto px-[24px] md:px-[40px] lg:px-[52px] xl:px-[80px];
+}
+.nav-link {
+  @apply text-white text-lg hover:underline;
+}
+.stars-bg {
+  background: url("./assets/stars.svg") top/50% no-repeat;
+}
